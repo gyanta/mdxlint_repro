@@ -1,0 +1,32 @@
+{
+    "env": {
+        "es2020": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime"
+    ],
+    "rules": {
+        "jsx-quotes": ["error", "prefer-double"]        
+    },    
+    "overrides": [
+        {
+            "files": "*.{md,mdx}",
+            "extends": [
+                "plugin:mdx/recommended"
+            ]            
+        }
+    ]
+}
